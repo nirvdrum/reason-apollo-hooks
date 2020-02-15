@@ -8,8 +8,8 @@ let useMutation = Mutation.useMutation;
 let useSubscription = Subscription.useSubscription;
 
 let toQueryObj = (result): ApolloClient.queryObj => {
-  "query": ApolloClient.gql(. result##query),
-  "variables": result##variables,
+  query: ApolloClient.gql(. result##query),
+  variables: result##variables,
 };
 
 let toReadQueryOptions = result => {
